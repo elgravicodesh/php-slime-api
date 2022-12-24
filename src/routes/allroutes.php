@@ -2,6 +2,7 @@
 use Slim\Http\Request;
 use Slim\Http\Response;
 
+// add ->add($auth); to end of group code to authenticate all routes inside group
 $app->group("/angularsettings", function () use ($app) {
 
     $app->post("/add", function(Request $request, Response $response, array $args){
@@ -40,7 +41,7 @@ $app->group("/angularsettings", function () use ($app) {
         return $response;
     });
 
-});
+})->add($auth); // add ->add($auth); to authentical all routes inside group
 
 $app->group("/approval", function () use ($app) {
 
