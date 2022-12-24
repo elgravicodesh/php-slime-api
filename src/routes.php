@@ -26,10 +26,10 @@ $app->post("/login", function(Request $request, Response $response, array $args)
   	   $this->logger->addInfo("Something interesting happened ". $val["message"] );
   	}elseif ($val["status"]==0)
   	{
-		// var_dump($val["data"]);
+		// Create token
   		$token = array(
-	    "iss" => "http://sd.com",
-	    "aud" => "http://sd.com",
+	    "iss" => "http://femi.com",
+	    "aud" => "http://thirdparty.com",
 	    "iat" => 1356999524,
 	    "data" => array("id" => $val["data"]->id,
 	    				"user_id" => $val["data"]->staff_id
