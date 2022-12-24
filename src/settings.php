@@ -22,13 +22,13 @@ return [
             // 'host' => 'DESKTOP-C5STNM8\MSSQL2014',    //what is this?
             'hostVar' => 'host',
             'dbVar' => 'dbname',
-            'dbname' => 'erp-bleneson',
+            'dbname' => 'erp-soft',
             'dbuser' => 'root',
-            'dbpass' => 'password@sdadmin'
+            'dbpass' => 'password1@femiadmin'
         ],
 
         'jwt' => [
-            'key'=> 'CenturyAppDev123',
+            'key'=> 'FemiAppDev2019',
             'alg' => array('HS256'),
         ]
     ],
