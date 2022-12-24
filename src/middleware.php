@@ -7,7 +7,7 @@ $app->add(function ($req, $res, $next) {
     $response = $next($req, $res);
     return $response
 			->withHeader('Access-Control-Allow-Origin', '*')
-			// ->withHeader('Access-Control-Allow-Origin', 'http://erp.sundimension.ng') 
+			// ->withHeader('Access-Control-Allow-Origin', 'https://domainname.com') 
 			// ->withHeader('Access-Control-Allow-Origin', 'http://localhost:4201')
             ->withHeader('Access-Control-Allow-Headers', 'X-Requested-With, Content-Type, Accept, Origin, Authorization, token')
             ->withHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
